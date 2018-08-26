@@ -1,0 +1,63 @@
+﻿$font-size-normal: 12px;
+
+body {
+    margin-top: 20px;
+    overflow-y: scroll;
+    font-family: "Lobster", cursive;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: $font-size-normal;
+
+    li {
+        margin-top: 5px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.current-page {
+    font-size: $font-size-normal * 1.5;
+}
+
+#navigation {
+    padding: 20px 0 0 10px;
+    width: 100%;
+}
+
+#navigation, #content {
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#content {
+    p {
+        padding-left: 10px;
+    }
+
+    table {
+        margin-left: 10px;
+    }
+}
+
+@media(min-width:600px) {
+    #navigation {
+        padding: 20px 10px 0 0;
+        margin-bottom: 400px;
+        text-align: right;
+        width: 300px;
+        border-right: 1px solid gray;
+    }
+}
+
+@import "slider";
+@import "wall";
+@import "common";

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheung Yiu Hong</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="css/page.min.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div class="text-extra-large">Cheung Yiu Hong</div>
+        <br />
+        <ul>
+            <li>
+                <a class="current-page" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="oil-painting.html">Oil Painting</a>
+            </li>
+            <li>
+                <a href="sketch.html">Sketch</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <br />
+    </div>
+    <div id="content">
+    </div>
+    <script src="js/slider.js"></script>
+    <script>
+        // Set content size
+        if (window.innerWidth > 600)
+            document.getElementById("content").style.width = document.body.clientWidth - document.getElementById("navigation").offsetWidth + "px";
+        else
+            document.getElementById("content").style.width = document.getElementById("navigation").offsetWidth + "px";
+    </script>
+    <script>
+        var slider = imageSlider();
+        slider.initialise("content");
+        // Load pictures list
+        slider.loadPicturesByXML("img/list/oil-painting.xml");
+        slider.loadPicturesByXML("img/list/sketch.xml");
+        // First load
+        slider.width = parseInt(slider.container.clientWidth) - 20;
+        slider.maxHeight = parseInt(window.innerHeight - slider.container.getBoundingClientRect().top - 20);
+        slider.to(Math.floor((Math.random() * 10)));
+    </script>
+</body>
+</html>

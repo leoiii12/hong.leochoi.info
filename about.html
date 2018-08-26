@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Cheung Yiu Hong</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="css/page.min.css" />
+</head>
+<body>
+    <div id="navigation">
+        <div class="text-extra-large">Cheung Yiu Hong</div>
+        <br />
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="current-page" href="about.html">About</a>
+            </li>
+            <li>
+                <a href="oil-painting.html">Oil Painting</a>
+            </li>
+            <li>
+                <a href="sketch.html">Sketch</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <br />
+    </div>
+    <div id="content">
+        <p class="text-large">About</p>
+        <p>張耀康，一位香港本地畫家。早年跟隨台灣知名畫家胡凱評先生專研西方藝術。</p>
+        <p>而題材主要以風景或人物為主。畫面充分展現各種顏色相互調所演化出來的美，加上筆觸帶來的力量，形成更鮮明的效果。近年的畫作總是希著一種寧靜和孤寂感。</p>
+        <p>而素描則喜歡用炭筆以國畫形式的線描來完成。不停流動的線條，游走於畫面之間。有明快的，有緩慢的。並在畫面間留白以作喘息。</p>
+    </div>
+    <script>
+        // Set content size
+        if (window.innerWidth > 600)
+            document.getElementById("content").style.width = document.body.clientWidth - document.getElementById("navigation").offsetWidth + "px";
+        else
+            document.getElementById("content").style.width = document.getElementById("navigation").offsetWidth + "px";
+    </script>
+</body>
+</html>
