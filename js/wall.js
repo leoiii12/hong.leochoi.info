@@ -44,6 +44,7 @@ function wall() {
                 var imagePreview = new Image();
                 imagePreview.src = imagePath + "?height=" + $scope.height+"&width=" + $scope.height+"&mode=crop";
                 imagePreview.setAttribute("data-src", imagePath);
+                imagePreview.width = "250"
                 imagePreview.className = "box";
                 imagePreview.onclick = function () {
                     var image = new Image();
