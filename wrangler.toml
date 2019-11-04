@@ -1,0 +1,12 @@
+name = "yiuhong-ga"
+type = "webpack"
+account_id = "0ded48be03f18b53d897f1e3e814570f"
+workers_dev = true
+
+[site]
+bucket = "./www"
+entry-point = "workers-site"
+
+[env.production]
+zone_id = "a25e600faab4526e1d1541acfff4ecbb"
+route = "yiuhong.ga/*"
